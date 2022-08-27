@@ -1,0 +1,19 @@
+.logo {
+  padding: 24px 0;
+  margin: 0;
+  text-align: center;
+
+  font-family: "Raleway";
+  @include font(700, 26px, 1.19, null);
+  /*font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;*/
+
+  text-decoration: none;
+  color: var(--black-text-color);
+}
+
+.blue-logo {
+  color: var(--select-color);
+  padding: 0;
+}

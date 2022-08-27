@@ -5,13 +5,13 @@
 .join-us-title {
   display: flex;
   margin-bottom: 20px;
-  @include font(700, 14px, 1.14, 0.03em);
+  @include font(700, 14px, 1.14, 0.03em, $whiteColor);
   /*font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;*/
   text-transform: uppercase;
-  color: var(--white-bgc);
+  //color: var(--white-bgc);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

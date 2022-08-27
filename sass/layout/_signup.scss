@@ -1,13 +1,13 @@
 .footer-label {
   display: flex;
   flex-direction: column;
-  @include font(700, 14px, 1.14, 0.03em);
+  @include font(700, 14px, 1.14, 0.03em, $whiteColor);
   /*font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;*/
   text-transform: uppercase;
-  color: var(--white-bgc);
+  //color: var(--white-bgc);
   margin-bottom: 20px;
 }
 .footer-field {
@@ -18,7 +18,7 @@
   display: flex;
   margin-right: 12px;
   padding: 15px 16px;
-  @include font(400, 16px, 1.25, 0.03em);
+  @include font(400, 16px, 1.25, 0.03em, $footerInput);
   /*font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;*/
@@ -30,13 +30,13 @@
   min-width: 358px;
   outline: none;
 
-  color: var(--secondary-text-color);
+  color: $footerInput;
   transition: border-color var(--animation);
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $footerInput;
   }
   &:focus-within {
     border-color: var(--select-color);
@@ -51,13 +51,13 @@
   display: flex;
   align-items: center;
   padding: 10px 28px;
-  @include font(700, 16px, 1.88, 0.06em);
+  @include font(700, 16px, 1.88, 0.06em, $whiteColor);
   /*font-weight: 700;
   font-size: 16px;
   line-height: 1.88;*/
   letter-spacing: 0.06em;
 
-  color: var(--white-bgc);
+  //color: var(--white-bgc);
   background: #2196f3;
   box-shadow: var(--btn-shadow-);
   border-radius: 4px;

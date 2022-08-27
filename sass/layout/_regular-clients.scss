@@ -3,13 +3,13 @@
 }
 
 .regular-clients-title {
-  @include font(700, 36px, 1.16, 0.03em);
+  @include font(700, 36px, 1.16, 0.03em, $textColor);
   /*font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;*/
   text-align: center;
-  color: var(--title-text-color);
+  //color: var(--title-text-color);
   margin-bottom: 50px;
 }
 

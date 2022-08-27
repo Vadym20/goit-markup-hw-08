@@ -16,7 +16,7 @@
 
 <body>
   <!-- Шапка сайта -->
-  <header class="header">
+  <!-- <header class="header">
     <div class="container flex">
       <a class="logo" href="./index.html" lang="en"><span class="blue-logo">Web</span>Studio</a>
       <nav class="header-nav">
@@ -53,41 +53,59 @@
         </li>
       </ul>
     </div>
-  </header>
+  </header> -->
   <!--Герой-->
-  <main>
-    <section class="hero">
-      <div class="hero-content">
+  <main class="hero">
+    <section class="hero-section section">
+      <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!--Особенности-->
-    <section class="features-section">
+    <section class="features section">
       <div class="container">
-        <h2 class="visually-hidden">Особливості студії</h2>
-
         <ul class="features__list">
           <li class="features__item">
-            <h3 class="features__subtitle">Увага до деталей</h3>
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h2 class="features__subtitle subtitle">УВАГА ДО ДЕТАЛЕЙ</h2>
             <p class="features__desc">
-              Ідейні міркування і навіть початок повсякденної роботи з формування позиції.
+              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
             </p>
           </li>
           <li class="features__item">
-            <h3 class="features__subtitle">Пунктуальність</h3>
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h2 class="features__subtitle subtitle">ПУНКТУАЛЬНІСТЬ</h2>
             <p class="features__desc">
               Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
             </p>
           </li>
           <li class="features__item">
-            <h3 class="features__subtitle">Планування</h3>
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h2 class="features__subtitle subtitle">ПЛАНУВАННЯ</h2>
             <p class="features__desc">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li class="features__item">
-            <h3 class="features__subtitle">Сучасні технології</h3>
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h2 class="features__subtitle subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
             <p class="features__desc">
               Значимість цих проблем настільки очевидна, що реалізація планових завдань.
             </p>
@@ -96,7 +114,7 @@
       </div>
     </section>
     <!--Деятельность-->
-    <section class="activity section">
+    <!-- <section class="activity section">
       <div class="container">
         <h2 class="activity-title">Чим ми займаємося</h2>
         <ul class="activity-list list">
@@ -115,9 +133,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!--Команда-->
-    <section class="team page-sections">
+    <!-- <section class="team page-sections">
       <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list">
@@ -271,7 +289,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <section class="regular-clients">
       <div class="container">
         <h2 class="regular-clients-title">Постійні клієнти</h2>
@@ -465,6 +483,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

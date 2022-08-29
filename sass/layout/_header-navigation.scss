@@ -1,0 +1,67 @@
+.header-nav__list {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+    @media screen and (min-width: 768px) {
+      gap: 50px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .header-nav .header-nav__link--current::after {
+      position: absolute;
+      display: block;
+      right: 0;
+      bottom: -1px;
+      content: "";
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: $accentColor;
+      animation-name: changeScale;
+      animation-duration: 500ms;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  @keyframes changeScale {
+    0% {
+      transform: scaleX(1);
+    }
+  
+    50% {
+      transform: scaleX(0);
+    }
+  
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  .header-nav__item {
+    position: relative;
+    @media screen and (min-width: 768px) {
+      padding: 32px 0;
+    }
+  }
+  
+  .header-nav__link {
+    transition: color $animation;
+    @media screen and (max-width: 767px) {
+      @include font(500, 40px, 1.14, 0.02em, $textColor);
+    }
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 1.14, 0.02em, $textColor);
+    }
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      cursor: pointer;
+    }
+    &--current {
+      color: $accentColor;
+    }
+  }
+  .header-nav__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+

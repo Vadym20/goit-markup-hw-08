@@ -1,0 +1,19 @@
+body {
+    font-family: $mainFontFamily;
+    color: $textColor;
+    width: 100%;
+    margin: 0;
+    // padding-top: 60px;
+    @media screen and (min-width: 768px) {
+      // padding-top: 80px;
+    }
+  }
+  body.modal-open {
+    overflow: hidden;
+  }
+  
+  body.menu-open {
+    @media screen and (max-width: 767px) {
+      overflow: hidden;
+    }
+  }

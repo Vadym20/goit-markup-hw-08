@@ -20,26 +20,28 @@
 
 <body>
   <!----------Header------------>
+  <!--HEADER-->
   <header class="header">
-    <div class="container flex">
-      <a lang="en" class="logo" href="./index.html"><span class="blue-logo">Web</span>Studio</a>
-      <nav class="header-nav">
-        <ul class="header-list list">
-          <li class="header-list-item list">
-            <a href="./index.html" class="header-link">Студія</a>
-          </li>
-          <li class="header-list-item">
-            <a href="./portfolio.html" class="header-link current-page link">Портфоліо</a>
-          </li>
-          <li class="header-list-item list">
-            <a href="#" class="header-link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="contacts">
-        <li class="contact-list-item">
-          <a href="mailto:info@devstudio.com" class="contacts-list-link">
-            <svg class="contacts-icon" width="16" height="12">
+    <div class="header-wrap container">
+      <a href="index.html" class="logo"> <span class="logo--accent">Web</span>Studio</a>
+      <div class="menu header__menu" data-menu>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link">Студія</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="header-nav__link header-nav__link--current">Портфоліо</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#contacts" class="header-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact__list menu__contacts">
+          <li class="header-contact__item">
+            <a href="mailto:info@devstudio.com" class="header-contact__link">
+              <svg class="header-contact__icon" width="16" height="12">
               <use href="./images/icons-cont.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
@@ -54,6 +56,34 @@
           </a>
         </li>
       </ul>
+       <!--mobile menu-->
+       <ul class="social-small social-menu">
+        <li class="social-small__item">
+          <a href="" class="social-small__link">Instagram</a>
+        </li>
+        <li class="social-small__item">
+          <a href="" class="social-small__link">Twitter</a>
+        </li>
+        <li class="social-small__item">
+          <a href="" class="social-small__link">Facebook</a>
+        </li>
+        <li class="social-small__item">
+          <a href="" class="social-small__link">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      type="button"
+      class="menu-button header_menu-button"
+      data-menu-button
+      aria-expanded="false"
+    >
+      <svg class="" width="40" height="40">
+        <use class="menu-button__close" href="./images/icons-menu.svg#icon-close"></use>
+        <use class="menu-button__menu" href="./images/icons-menu.svg#icon-menu"></use>
+      </svg>
+    </button>
     </div>
   </header>
   <!----------Main--------->
@@ -322,6 +352,6 @@
       </div>
     </div>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
-
 </html>

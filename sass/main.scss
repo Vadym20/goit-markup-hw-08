@@ -3,26 +3,38 @@
 @import "./utils/mixins";
 @import "./utils/hidden";
 
-@import "./base/reset";
-@import "./base/common";
+@import "./bases/reset";
+@import "./bases/body";
+@import "./bases/common";
 
 @import "./components/container";
 @import "./components/section";
+@import "./layout/header";
+@import "./layout/header-navigation";
+@import "./layout/header-contacts";
 @import "./components/logo";
-@import "./components/header";
-@import "./components/navigation";
+@import "./layout/hero";
+@import "./layout/features";
+
+@import "./layout/modal-menu";
+@import "./layout/social-menu";
+@import "./layout/menu-btn";
+
 @import "./components/modal";
 @import "./components/button";
 @import "./components/footer-logo";
 @import "./components/portfolio-button";
 
-@import "./layout/header";
+
 @import "./layout/hero";
 @import "./layout/features";
-@import "./layout/activity";
+@import "./components/subtitle";
+@import "./components/title";
+@import "./layout/work-section";
 @import "./layout/team";
 @import "./layout/regular-clients";
 @import "./layout/footer";
 @import "./layout/join-us";
 @import "./layout/signup";
 @import "./layout/portfolio";
+

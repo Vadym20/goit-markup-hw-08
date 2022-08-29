@@ -1,19 +1,25 @@
 .logo {
-  padding: 24px 0;
-  margin: 0;
-  text-align: center;
+  @include font(700, 26px, 28px, 0.03em, $blackColor);
+  font-family: $logoFontFamily;
+  padding-right: 0;
 
-  font-family: "Raleway";
-  //@include font(700, 26px, 1.19, null);
-  /*font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;*/
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 
-  text-decoration: none;
-  color: var(--black-text-color);
-}
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
-.blue-logo {
-  color: var(--select-color);
-  padding: 0;
+  &-footer {
+    color: $whiteColor;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    margin-right: 0;
+    display: inline-block;
+  }
+
+  &--accent {
+    color: $accentColor;
+  }
 }

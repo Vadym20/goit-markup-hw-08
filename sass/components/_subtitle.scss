@@ -1,0 +1,5 @@
+.subtitle {
+    @include font(700, $simpleFontSize, 1.14, 0.03em, null);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }

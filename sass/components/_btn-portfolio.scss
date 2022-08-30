@@ -1,0 +1,42 @@
+.button {
+    @include font(500, 16px, 1.62, 0.03em, $textColor);
+    font-family: inherit;
+    background: $btnColor;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px 32px;
+    transition: color $animation, background $animation, box-shadow $animation;
+  
+    &:hover,
+    &:focus {
+      background: $accentColor;
+      cursor: pointer;
+      box-shadow: $btnBoxShadow;
+      border-radius: 4px;
+      color: $whiteColor;
+    }
+  
+    &--current {
+      background: $accentColor;
+      border-radius: 4px;
+      color: $whiteColor;
+    }
+  
+    &--current:hover,
+    &--current:focus {
+      cursor: pointer;
+      box-shadow: $btnBoxShadow;
+    }
+  }
+  .btn-list {
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 15px 8px;
+    flex-wrap: wrap;
+    justify-content: start;
+  
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }

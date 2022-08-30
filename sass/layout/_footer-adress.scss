@@ -1,0 +1,24 @@
+.address-list__item {
+    margin-bottom: 9px;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .address-list__link {
+    @include font(null, $simpleFontSize, 1.71, 0.03em, rgba(255, 255, 255, 0.6));
+    font-style: normal;
+    transition: color $animation;
+  
+    &--bold {
+      color: $whiteColor;
+      transition: color $animation;
+    }
+  
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      cursor: pointer;
+    }
+  }

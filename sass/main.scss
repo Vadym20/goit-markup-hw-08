@@ -1,8 +1,6 @@
-
-@import "./utils/vars";
 @import "./utils/mixins";
+@import "./utils/vars";
 @import "./utils/hidden";
-
 @import "./bases/reset";
 @import "./bases/body";
 @import "./bases/common";
@@ -15,26 +13,32 @@
 @import "./components/logo";
 @import "./layout/hero";
 @import "./layout/features";
-
-@import "./layout/modal-menu";
-@import "./layout/social-menu";
-@import "./layout/menu-btn";
-
-@import "./components/modal";
-@import "./components/button";
-@import "./components/footer-logo";
-@import "./components/portfolio-button";
-
-
-@import "./layout/hero";
-@import "./layout/features";
 @import "./components/subtitle";
 @import "./components/title";
 @import "./layout/work-section";
-@import "./layout/team";
-@import "./layout/regular-clients";
+@import "./layout/user-section";
+@import "./layout/clients";
 @import "./layout/footer";
-@import "./layout/join-us";
-@import "./layout/signup";
-@import "./layout/portfolio";
+@import "./layout/footer-adress";
+@import "./layout/footer-soc";
+@import "./layout/footer-field";
+@import "./layout/modal-menu";
+@import "./layout/social-menu";
+@import "./layout/menu-btn";
+@import "./components/modal";
+@import "./components/button";
+@import "./components/btn-portfolio";
+@import "./layout/product-section";
+@import "./layout/product-card";
+
+
+// @import "./layout/hero";
+// @import "./layout/features";
+
+// @import "./layout/team";
+
+
+
+// @import "./layout/signup";
+// @import "./layout/portfolio";
 

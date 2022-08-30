@@ -1,0 +1,57 @@
+.footer__field {
+    margin-top: 20px;
+  }
+  
+  .footer__label {
+    @include font(700, 14px, 1.14, 0.03em, $whiteColor);
+    text-transform: uppercase;
+  }
+  
+  .footer__input {
+    @include font(null, 16px, 1.25, 0.03em, $footerInput);
+    background: transparent;
+    border: $borderFooterInput;
+    filter: $filterFooterInput;
+    border-radius: 4px;
+  
+    outline: none;
+    padding: 15px 16px;
+    transition: border-color $animation;
+    min-width: 100%;
+  
+    @media screen and (min-width: 500px) and (max-width: 1199px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 358px;
+    }
+  
+    &::placeholder {
+      @include font(null, 16px, 1.25, 0.03em, $footerInput);
+    }
+  
+    &:focus-within {
+      border-color: $accentColor;
+    }
+  }
+  .footer__btn {
+    @include button(28px);
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 12px;
+    }
+  
+    &:hover,
+    &:focus {
+      background-color: $accentHover;
+      cursor: pointer;
+    }
+  }
+  
+  .footer__send-icon {
+    margin-left: 10px;
+    
+  }

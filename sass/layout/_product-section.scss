@@ -1,0 +1,33 @@
+.product {
+    display: block;
+    gap: 30px;
+    justify-content: center;
+  
+    @media screen and (min-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &:last-child {
+      @media screen and (min-width: 767px) and (max-width: 1200px) {
+        justify-content: left;
+      }
+    }
+  }
+  
+  .portfolio {
+    animation-name: portfolio;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  @keyframes portfolio {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

@@ -1,6 +1,7 @@
 .footer {
     background: $backgroundColor;
     text-align: center;
+    padding: 60px 0;
   }
   @media screen and (max-width: 499px) {
     .footer {
@@ -19,8 +20,9 @@
     }
     .footer-container {
       width: 1200px;
-  
+      
       display: flex;
+      align-items: baseline;
       // justify-content: space-between;
     }
     .footer__first-container {
@@ -34,7 +36,7 @@
     }
     .footer__second-container,
     .footer__third-container {
-      padding-top: 12px;
+      padding-top: 0;
     }
   }
   @media screen and (min-width: 500px) and (max-width: 1199px) {

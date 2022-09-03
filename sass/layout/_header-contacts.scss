@@ -12,7 +12,7 @@
     }
   
     @media screen and (max-width: 767px) {
-      flex-direction: column-reverse;
+      flex-direction: column-reverse;               
       gap: 32px;
   
       .header-contact__item:nth-child(2) {
@@ -32,8 +32,8 @@
       }
     }
     .header-contact__link {
-      // padding: 32px 0;
-      //  padding-top: 20px;
+      //  padding: 32px 0;
+      // padding-top: 20px;
       display: flex;
       align-items: center;
       transition: color $animation, fill $animation;
@@ -41,8 +41,13 @@
       @include font(500, $simpleFontSize, 1.14, 0.02em, $subTextColor);
   
       @media screen and (max-width: 767px) {
-        // padding-top: 20px;
+        padding-top: 20px;
         @include font(500, 24px, 1.17, 0.02em, $subTextColor);
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        padding: 32px 0;
+        
       }
   
       &:hover,
@@ -51,11 +56,14 @@
         color: $accentColor;
       }
       &--accent {
-        // padding: 32px 0;
-        padding-top: 0;
+        //  padding: 32px 0;
+        // padding-top: 0;
         // padding-bottom: 20px;
         @media screen and (max-width: 767px) {
           @include font(500, 34px, 1.17, 0.02em, $accentColor);
+        }
+        @media screen and (min-width: 1200px) {
+          padding: 32px 0;
         }
       }
       .header-contact__icon {

@@ -1,4 +1,6 @@
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   @include font(700, 26px, 28px, 0.03em, $blackColor);
   font-family: $logoFontFamily;
   padding-right: 0;
@@ -11,15 +13,38 @@
     margin-right: 93px;
   }
 
-  &-footer {
-    color: $whiteColor;
+  // &-footer {
+  //   color: $whiteColor;
+  //   margin-bottom: 20px;
+  //   padding-bottom: 0;
+  //   margin-right: 0;
+  //   display: inline-block;
+  // }
+
+   &--accent {
+    color: $accentColor;
+   }
+
+}
+
+.footer-logo {
+  @include font(700, 26px, 1.19, 0.03em, $whiteColor);
+    // color: $whiteColor;
     margin-bottom: 20px;
     padding-bottom: 0;
     margin-right: 0;
     display: inline-block;
-  }
-
-  &--accent {
-    color: $accentColor;
-  }
+    @media screen and (min-width: 480px) {
+      display: block;
+      align-items: center;
+      justify-content: center;
+    }
 }
+ .footer--accent {
+  @include font(700, 26px, 1.19, 0.03em, $accentColor);
+  margin-bottom: 20px;
+  // @include font(700, 26px, 28px, 0.03em, $accentColor);
+  font-family: "Raleway";
+  font-style: normal;
+  // @include font(700, 26px, 1.19, 0.03em, $accentColor);
+ }

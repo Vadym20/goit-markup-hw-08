@@ -2,7 +2,7 @@
     margin-top: 20px;
   }
   
-  .footer__label {
+  .footer__text {
     @include font(700, 14px, 1.14, 0.03em, $whiteColor);
     text-transform: uppercase;
   }

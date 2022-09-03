@@ -32,6 +32,7 @@
       }
     }
     .header-contact__link {
+      padding-top: 20px;
       display: flex;
       align-items: center;
       transition: color $animation, fill $animation;
@@ -48,6 +49,8 @@
         color: $accentColor;
       }
       &--accent {
+        padding-top: 0;
+        padding-bottom: 20px;
         @media screen and (max-width: 767px) {
           @include font(500, 34px, 1.17, 0.02em, $accentColor);
         }

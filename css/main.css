@@ -330,7 +330,6 @@ body.modal-open {
   }
 }
 .header-contact__list .header-contact__link {
-  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +361,6 @@ body.modal-open {
 }
 .header-contact__list .header-contact__link--accent {
   padding-top: 0;
-  padding-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
   .header-contact__list .header-contact__link--accent {
@@ -422,6 +420,8 @@ body.modal-open {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #fff;
+  font-family: "Raleway";
+  font-style: normal;
   margin-bottom: 20px;
   padding-bottom: 0;
   margin-right: 0;

@@ -30,6 +30,8 @@
 .footer-logo {
   @include font(700, 26px, 1.19, 0.03em, $whiteColor);
     // color: $whiteColor;
+    font-family: "Raleway";
+    font-style: normal;
     margin-bottom: 20px;
     padding-bottom: 0;
     margin-right: 0;

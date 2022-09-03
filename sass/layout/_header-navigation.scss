@@ -60,6 +60,7 @@
     &--current {
       color: $accentColor;
     }
+    
   }
   .header-nav__item:not(:last-child) {
     @media screen and (max-width: 767px) {
